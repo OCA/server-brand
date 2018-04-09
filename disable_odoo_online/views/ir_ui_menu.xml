@@ -5,4 +5,8 @@
         <field name="parent_id" ref="base.menu_ir_property"/>
     </record>
 
+    <record model="ir.ui.menu" id="base.module_mi">
+        <field name="parent_id" ref="base.menu_ir_property"/>
+    </record>
+
 </odoo>
