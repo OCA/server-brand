@@ -2,7 +2,7 @@
 <templates>
     <t t-extend="UserMenu.Actions">
         <t t-jquery="a[data-menu='account'], a[data-menu='documentation'], a[data-menu='support']">
-            this.parent().remove();
+            this.remove();
         </t>
     </t>
 </templates>
