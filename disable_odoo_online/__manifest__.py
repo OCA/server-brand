@@ -6,14 +6,8 @@
     "author": "Therp BV,GRAP,Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "base",
-    "depends": [
-        'mail',
-    ],
-    "data": [
-        'views/ir_ui_menu.xml',
-    ],
-    "qweb": [
-        'static/src/xml/base.xml',
-    ],
-    'installable': True,
+    "depends": ["mail"],
+    "data": ["views/ir_ui_menu.xml"],
+    "qweb": ["static/src/xml/base.xml"],
+    "installable": True,
 }
