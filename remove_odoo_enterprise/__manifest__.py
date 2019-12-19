@@ -15,5 +15,5 @@
         'data/ir_module_module.xml',
     ],
     'installable': True,
-    'auto_install': True,
+    'auto_install': False,
 }
