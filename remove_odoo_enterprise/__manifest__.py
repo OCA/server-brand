@@ -3,7 +3,7 @@
 {
     'name': 'Remove Odoo Enterprise',
     'summary': 'Remove enterprise modules and setting items',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.1.0',
     'category': 'Maintenance',
     'author': 'Eska, Odoo Community Association (OCA)',
     'website': 'https://github.com/OCA/server-brand/',
