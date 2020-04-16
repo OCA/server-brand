@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for oca-server-brand Odoo addons",
     version=version,
     install_requires=[
+        'odoo13-addon-disable_odoo_online',
         'odoo13-addon-remove_odoo_enterprise',
     ],
     classifiers=[
