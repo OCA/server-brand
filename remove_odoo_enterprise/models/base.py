@@ -9,6 +9,7 @@ class Base(models.AbstractModel):
 
     @api.model
     def search(self, domain, offset=0, limit=None, order=None, count=False):
+        res = super().search(domain, offset, limit, order, count)
         if self._name == "payment.acquirer":
             buy_modules = self.env['ir.module.module'].sudo().search([('to_buy', '=', True)])
             domain += [("module_id", "not in", buy_modules.ids)]
