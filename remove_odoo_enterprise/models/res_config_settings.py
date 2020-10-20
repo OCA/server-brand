@@ -1,5 +1,5 @@
 # Copyright 2016 LasLabs Inc.
-# Copyright 2018 Onestein (<http://www.onestein.eu>)
+# Copyright 2018-2020 Onestein (<http://www.onestein.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from lxml import etree
@@ -14,7 +14,7 @@ class ResConfigSettings(models.TransientModel):
     def fields_view_get(
         self, view_id=None, view_type="form", toolbar=False, submenu=False
     ):
-        ret_val = super(ResConfigSettings, self).fields_view_get(
+        ret_val = super().fields_view_get(
             view_id=view_id, view_type=view_type, toolbar=toolbar, submenu=submenu
         )
 
