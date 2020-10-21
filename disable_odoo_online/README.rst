@@ -64,6 +64,7 @@ Contributors
 * Hieu, Vo Minh Bao <hieu.vmb@komit-consulting.com>
 * Lorenzo Battistini <https://github.com/eLBati>
 * Dennis Sluijk <d.sluijk@onestein.nl>
+* Dhara Solanki <dhara.solanki@initos.com> (http://www.initos.com)
 
 Maintainers
 ~~~~~~~~~~~

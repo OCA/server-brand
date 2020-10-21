@@ -2,8 +2,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Remove odoo.com Bindings",
-    "version": "13.0.1.0.0",
+    "version": "14.0.1.0.0",
     "author": "Therp BV,GRAP,Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/server-brand",
     "license": "AGPL-3",
     "category": "base",
     "depends": ["mail"],
