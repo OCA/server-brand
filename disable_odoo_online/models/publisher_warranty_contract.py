@@ -10,6 +10,4 @@ class PublisherWarrantyContract(models.AbstractModel):
 
     def update_notification(self, cron_mode=True):
         if version_info[5] == "e":
-            return super(PublisherWarrantyContract, self).update_notification(
-                cron_mode=cron_mode
-            )
+            return super().update_notification(cron_mode=cron_mode)
