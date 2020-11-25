@@ -6,7 +6,7 @@
     "version": "14.0.1.0.0",
     "category": "Maintenance",
     "author": "Eska, Onestein, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/server-brand/",
+    "website": "https://github.com/OCA/server-brand",
     "license": "AGPL-3",
     "depends": ["base"],
     "installable": True,
