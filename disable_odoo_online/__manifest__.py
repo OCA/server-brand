@@ -8,7 +8,10 @@
     "license": "AGPL-3",
     "category": "base",
     "depends": ["mail"],
-    "data": ["views/ir_ui_menu.xml"],
+    "data": [
+        "views/ir_ui_menu.xml",
+        "views/res_config_settings_views.xml"
+    ],
     "qweb": ["static/src/xml/base.xml"],
     "installable": True,
 }
