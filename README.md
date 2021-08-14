@@ -17,10 +17,10 @@ TODO: add repo description.
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[disable_odoo_online](disable_odoo_online/) | 14.0.1.0.0 | Remove odoo.com Bindings
-[remove_odoo_enterprise](remove_odoo_enterprise/) | 14.0.1.0.0 | Remove enterprise modules and setting items
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[disable_odoo_online](disable_odoo_online/) | 14.0.1.0.0 |  | Remove odoo.com Bindings
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 14.0.1.0.0 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 
