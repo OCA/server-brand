@@ -29,7 +29,7 @@ class ResConfigSettings(models.TransientModel):
 
         query = "//div[div[field[@widget='upgrade_boolean']]]"
         for item in doc.xpath(query):
-            item.getparent().remove(item)
+            item.attrib["style"] = "display:none"
 
         ret_val['arch'] = etree.tostring(doc)
         return ret_val
