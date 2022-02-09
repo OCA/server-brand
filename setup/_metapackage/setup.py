@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo13-addon-disable_odoo_online',
+        'odoo13-addon-portal_odoo_debranding',
         'odoo13-addon-remove_odoo_enterprise',
     ],
     classifiers=[
