@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="frontend_layout_debrand" inherit_id="portal.frontend_layout">
+        <xpath expr="//footer/div/div" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+    <template
+        id="portal_record_sidebar_debrand"
+        inherit_id="portal.portal_record_sidebar"
+    >
+        <xpath expr="//div[hasclass('card-footer')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+</odoo>
