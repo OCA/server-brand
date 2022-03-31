@@ -15,4 +15,3 @@ repo_slug: server-brand
 repo_website: https://github.com/OCA/server-brand
 travis_apt_packages: []
 travis_apt_sources: []
-
