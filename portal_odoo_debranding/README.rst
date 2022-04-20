@@ -23,7 +23,7 @@ Remove Odoo Branding from Portal
     :target: https://runbot.odoo-community.org/runbot/252/14.0
     :alt: Try me on Runbot
 
-|badge1| |badge2| |badge3| |badge4| |badge5|
+|badge1| |badge2| |badge3| |badge4| |badge5| 
 
 This module removes Odoo branding from portal pages.
 
@@ -49,6 +49,9 @@ Authors
 ~~~~~~~
 
 * TAKOBI
+* Ilyas
+* Ooops404
+* 
 
 Contributors
 ~~~~~~~~~~~~
@@ -58,6 +61,8 @@ Contributors
   * Lorenzo Battistini
 
 * Iván Todorovich <ivan.todorovich@gmail.com>
+* Ooops404 <https://www.ooops404.com>
+* Ilyas <irazor147@gmail.com>
 
 Maintainers
 ~~~~~~~~~~~
@@ -81,7 +86,7 @@ promote its widespread use.
 
 Current `maintainers <https://odoo-community.org/page/maintainer-role>`__:
 
-|maintainer-eLBati| |maintainer-ivantodorovich|
+|maintainer-eLBati| |maintainer-ivantodorovich| 
 
 This module is part of the `OCA/server-brand <https://github.com/OCA/server-brand/tree/14.0/portal_odoo_debranding>`_ project on GitHub.
 
