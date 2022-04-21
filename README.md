@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[disable_odoo_online](disable_odoo_online/) | 15.0.1.0.0 |  | Remove odoo.com Bindings
 [portal_odoo_debranding](portal_odoo_debranding/) | 15.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Remove Odoo Branding from Website
 
 [//]: # (end addons)
