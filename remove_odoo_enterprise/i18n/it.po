@@ -6,43 +6,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2023-01-10 13:44+0000\n"
+"Last-Translator: Alessandro Uffreduzzi <alessandro.uffreduzzi@pytech.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_base
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Impostazioni di configurazione"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module__display_name
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module__id
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module____last_update
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_ir_module_module
 msgid "Module"
-msgstr ""
+msgstr "Modulo"
