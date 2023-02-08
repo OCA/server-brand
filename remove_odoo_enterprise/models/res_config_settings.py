@@ -1,5 +1,6 @@
 # Copyright 2016 LasLabs Inc.
 # Copyright 2018-2020 Onestein (<http://www.onestein.eu>)
+# Copyright 2023 Le Filament (https://le-filament.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from lxml import etree
@@ -11,22 +12,18 @@ class ResConfigSettings(models.TransientModel):
     _inherit = "res.config.settings"
 
     @api.model
-    def fields_view_get(
-        self, view_id=None, view_type="form", toolbar=False, submenu=False
-    ):
-        ret_val = super().fields_view_get(
-            view_id=view_id, view_type=view_type, toolbar=toolbar, submenu=submenu
-        )
+    def get_views(self, views, options=None):
+        ret_val = super().get_views(views, options)
 
-        page_name = ret_val["name"]
-        if not page_name == "res.config.settings.view.form":
+        form_view = self.env["ir.ui.view"].browse(ret_val["views"]["form"]["id"])
+        if not form_view.xml_id == "base.res_config_settings_view_form":
             return ret_val
 
-        doc = etree.XML(ret_val["arch"])
+        doc = etree.XML(ret_val["views"]["form"]["arch"])
 
         query = "//div[div[field[@widget='upgrade_boolean']]]"
         for item in doc.xpath(query):
             item.attrib["class"] = "d-none"
 
-        ret_val["arch"] = etree.tostring(doc)
+        ret_val["views"]["form"]["arch"] = etree.tostring(doc)
         return ret_val

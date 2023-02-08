@@ -27,24 +27,15 @@ msgid "Config Settings"
 msgstr "Konfigurationsinställningar"
 
 #. module: remove_odoo_enterprise
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module__display_name
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings__display_name
-msgid "Display Name"
-msgstr "Visningsnamn"
-
-#. module: remove_odoo_enterprise
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module__id
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings__id
-msgid "ID"
-msgstr "ID"
-
-#. module: remove_odoo_enterprise
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_ir_module_module____last_update
-#: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings____last_update
-msgid "Last Modified on"
-msgstr "Senast ändrad den"
-
-#. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_ir_module_module
 msgid "Module"
 msgstr "Modul"
+
+#~ msgid "Display Name"
+#~ msgstr "Visningsnamn"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Senast ändrad den"
