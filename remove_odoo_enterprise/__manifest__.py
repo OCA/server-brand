@@ -8,6 +8,7 @@
     "author": "Eska, Onestein, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-brand",
     "license": "AGPL-3",
-    "depends": ["base"],
+    "depends": ["base_setup"],
+    "data": ["views/res_config_settings_views.xml"],
     "installable": True,
 }
