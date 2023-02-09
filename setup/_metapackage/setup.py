@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo-addon-disable_odoo_online>=16.0dev,<16.1dev',
+        'odoo-addon-remove_odoo_enterprise>=16.0dev,<16.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
