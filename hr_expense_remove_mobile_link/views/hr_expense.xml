@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="hr_expense.hr_expense_actions_my_all" model="ir.actions.act_window">
+        <field name="help" />
+    </record>
+
+    <record
+        id="hr_expense.hr_expense_actions_my_unsubmitted"
+        model="ir.actions.act_window"
+    >
+        <field name="help" />
+    </record>
+
+</odoo>
