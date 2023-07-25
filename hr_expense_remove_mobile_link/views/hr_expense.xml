@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="hr_expense.hr_expense_actions_my_all" model="ir.actions.act_window">
+        <field name="help" type="html">
+            <p class="o_view_nocontent_expense_receipt">
+                <h2 class="d-none d-md-block">
+                    Drag and drop files to create expenses
+                </h2>
+            </p>
+        </field>
+    </record>
+
+</odoo>
