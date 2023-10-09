@@ -20,6 +20,21 @@ msgstr ""
 "X-Generator: Weblate 3.3\n"
 
 #. module: disable_odoo_online
+#: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: disable_odoo_online
+#: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract__id
+msgid "ID"
+msgstr ""
+
+#. module: disable_odoo_online
+#: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: disable_odoo_online
 #: model:ir.model,name:disable_odoo_online.model_publisher_warranty_contract
 msgid "Publisher Warranty Contract"
 msgstr "Contrat de garantie fournisseur"
