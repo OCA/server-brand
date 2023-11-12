@@ -11,7 +11,7 @@
         id="portal_record_sidebar_debrand"
         inherit_id="portal.portal_record_sidebar"
     >
-        <xpath expr="//div[hasclass('card-footer')]" position="attributes">
+        <xpath expr="//div[hasclass('d-none')]" position="attributes">
             <attribute name="t-if">False</attribute>
         </xpath>
     </template>
