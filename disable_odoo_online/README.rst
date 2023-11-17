@@ -69,11 +69,14 @@ Contributors
 
 -  Holger Brunn <hbrunn@therp.nl>
 -  Stefan Rijnhart <stefan@opener.am>
--  Sylvain LE GAL (https://twitter.com/legalsylvain)
+-  Sylvain LE GAL
+   (`https://twitter.com/legalsylvain <https://twitter.com/legalsylvain>`__)
 -  Hieu, Vo Minh Bao <hieu.vmb@komit-consulting.com>
--  Lorenzo Battistini <https://github.com/eLBati>
+-  Lorenzo Battistini
+   <`https://github.com/eLBati <https://github.com/eLBati>`__>
 -  Dennis Sluijk <d.sluijk@onestein.nl>
--  Dhara Solanki <dhara.solanki@initos.com> (http://www.initos.com)
+-  Dhara Solanki <dhara.solanki@initos.com>
+   (`http://www.initos.com <http://www.initos.com>`__)
 -  Vincent Hatakeyama <vincent.hatakeyama@xcg-consulting.fr>
 
 Maintainers
