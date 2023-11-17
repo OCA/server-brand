@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <record id="base.menu_module_updates" model="ir.ui.menu">
-        <field name="parent_id" ref="base.menu_ir_property" />
-    </record>
-    <record id="base.module_mi" model="ir.ui.menu">
-        <field name="parent_id" ref="base.menu_ir_property" />
-    </record>
     <record id="base.menu_theme_store" model="ir.ui.menu">
         <field name="parent_id" ref="base.menu_ir_property" />
     </record>
