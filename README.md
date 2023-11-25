@@ -24,7 +24,7 @@ addon | version | maintainers | summary
 [disable_odoo_online](disable_odoo_online/) | 16.0.1.0.0 |  | Remove odoo.com Bindings
 [hr_expense_remove_mobile_link](hr_expense_remove_mobile_link/) | 16.0.1.0.0 |  | Remove Odoo Enterprise mobile app download links
 [portal_odoo_debranding](portal_odoo_debranding/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Remove Odoo Branding from Website
-[remove_odoo_enterprise](remove_odoo_enterprise/) | 16.0.2.0.0 |  | Remove enterprise modules and setting items
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 16.0.2.0.1 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 
