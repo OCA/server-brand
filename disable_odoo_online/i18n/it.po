@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: server-tools (10.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:01+0000\n"
-"PO-Revision-Date: 2022-12-20 15:46+0000\n"
+"PO-Revision-Date: 2024-01-29 17:38+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-10-0/"
 "language/it/)\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: disable_odoo_online
 #: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: disable_odoo_online
 #: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: disable_odoo_online
 #: model:ir.model.fields,field_description:disable_odoo_online.field_publisher_warranty_contract____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: disable_odoo_online
 #: model:ir.model,name:disable_odoo_online.model_publisher_warranty_contract
