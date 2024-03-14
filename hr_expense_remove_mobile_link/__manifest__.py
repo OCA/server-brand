@@ -1,6 +1,6 @@
 {
     "name": "Remove Odoo mobile app links",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Hidden",
     "summary": "Remove Odoo Enterprise mobile app download links",
     "website": "https://github.com/OCA/server-brand",
