@@ -26,7 +26,5 @@ msgstr "Base"
 msgid "Config Settings"
 msgstr "Impostazioni configurazione"
 
-#. module: remove_odoo_enterprise
-#: model:ir.model,name:remove_odoo_enterprise.model_ir_module_module
-msgid "Module"
-msgstr "Modulo"
+#~ msgid "Module"
+#~ msgstr "Modulo"

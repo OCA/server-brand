@@ -3,7 +3,6 @@
 # Copyright 2023 Le Filament (https://le-filament.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import json
 
 from lxml import etree
 
@@ -16,7 +15,7 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
-        query = "//div[div[field[@widget='upgrade_boolean']]]"
+        query = "//setting[field[@widget='upgrade_boolean']]"
         for item in doc.xpath(query):
             self.assertEqual(item.attrib["class"], "d-none")
 
@@ -35,10 +34,9 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
-        query = "//div[@id='appstore']"
+        query = "//setting[@id='appstore']"
         for item in doc.xpath(query):
-            invisible_attrib = json.loads(item.attrib["modifiers"])
-            self.assertTrue(invisible_attrib["invisible"])
+            self.assertTrue(item.attrib["invisible"])
 
     def test_appstore_visible(self):
         """Disabling the view makes the appstore widget visible again"""
@@ -50,6 +48,6 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
-        query = "//div[@id='appstore']"
+        query = "//setting[@id='appstore']"
         for item in doc.xpath(query):
-            self.assertNotIn("modifiers", item.attrib)
+            self.assertNotIn("invisible", item.attrib)

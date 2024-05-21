@@ -21,16 +21,26 @@ class ResConfigSettings(models.TransientModel):
 
         doc = etree.XML(ret_val["views"]["form"]["arch"])
 
-        query = "//div[div[field[@widget='upgrade_boolean']]]"
+        query = "//setting[field[@widget='upgrade_boolean']]"
         for item in doc.xpath(query):
             item.attrib["class"] = "d-none"
 
-        for container in doc.xpath("//div[contains(@class, 'o_settings_container')]"):
-            if len(container.xpath("div[not(contains(@class, 'd-none'))]")) == 0:
-                prev_el = container.getprevious()
-                if len(prev_el) and prev_el.tag == "h2":
-                    prev_el.attrib["class"] = "d-none"
-                container.attrib["class"] = "d-none"
+        for block in doc.xpath("//block"):
+            if (
+                len(
+                    block.xpath(
+                        """setting[
+                            not(contains(@class, 'd-none'))
+                            and not(@invisible='1')]
+                        """
+                    )
+                )
+                == 0
+            ):
+                # Removing title and tip so that no empty h2 or h3 are displayed
+                block.attrib.pop("title", None)
+                block.attrib.pop("tip", None)
+                block.attrib["class"] = "d-none"
 
         ret_val["views"]["form"]["arch"] = etree.tostring(doc)
         return ret_val
