@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [disable_odoo_online](disable_odoo_online/) | 17.0.1.0.0 |  | Remove odoo.com Bindings
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 17.0.1.0.0 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 
