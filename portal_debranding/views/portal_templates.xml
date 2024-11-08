@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <template id="brand_promotion_debrand" inherit_id="web.brand_promotion">
         <xpath expr="//div[hasclass('o_brand_promotion')]" position="attributes">
             <attribute name="t-if">False</attribute>
@@ -15,5 +14,4 @@
             <attribute name="t-if">False</attribute>
         </xpath>
     </template>
-
 </odoo>
