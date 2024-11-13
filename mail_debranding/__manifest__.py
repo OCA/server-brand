@@ -14,7 +14,7 @@
     """,
     "version": "17.0.1.0.0",
     "category": "Social Network",
-    "website": "https://github.com/OCA/social",
+    "website": "https://github.com/OCA/mail",
     "author": """Tecnativa, ForgeFlow, Onestein, Sodexis, Nexterp Romania,
              Odoo Community Association (OCA)""",
     "license": "AGPL-3",
