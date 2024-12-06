@@ -19,7 +19,6 @@ msgstr ""
 #. module: mail_debrand
 #. odoo-python
 #: code:addons/mail_debrand/tests/test_mail_debrand_digest.py:0
-#, python-format
 msgid "Connect"
 msgstr "Connetti"
 
