@@ -40,6 +40,7 @@ class TestMailDebrand(common.TransactionCase):
             {
                 "message": self.mail,
                 "company": self.env.company,
+                "email_notification_force_footer": True,
             },
             lang=lang.code,
             minimal_qcontext=True,
