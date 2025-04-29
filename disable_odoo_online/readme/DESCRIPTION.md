@@ -5,6 +5,3 @@ standard code:
   It's deactivated only in community version, because [it's not
   legal](https://www.odoo.com/documentation/user/12.0/legal/terms/enterprise.html#customer-obligations)
   to deactivate notifier code in odoo enterprise
-- apps and updates menu items in settings are hidden inside Technical
-  Parameters
-- documentation, support and odoo.com account are removed from user menu
