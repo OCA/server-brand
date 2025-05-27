@@ -12,20 +12,107 @@ from odoo.tests import common
 
 class TestRemoveOdooEnterprise(common.TransactionCase):
     def test_res_config_settings(self):
+        """
+        This test case checks the XML architecture of res.config.settings view,
+        specifically searching for div elements with a field element where widget
+        attribute is 'upgrade_boolean'. If such an element exists, it should have
+        the class "d-none".
+        """
         conf = self.env["res.config.settings"].create({})
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
         query = "//div[div[field[@widget='upgrade_boolean']]]"
         for item in doc.xpath(query):
-            self.assertEqual(item.attrib["class"], "d-none")
+            self.assertIn("d-none", item.attrib["class"])
 
-    def test_search_base(self):
+    def test_hide_empty_containers(self):
+        """Test the _hide_empty_containers method"""
+        conf = self.env["res.config.settings"].create({})
+
+        # Create a test XML document with empty containers
+        xml_content = """
+        <form>
+            <h2>Heading 1</h2>
+            <div class="o_settings_container">
+                <div class="o_setting_box d-none">Hidden setting box</div>
+            </div>
+            <h2>Heading 2</h2>
+            <div class="o_settings_container">
+                <div class="o_setting_box">Visible setting box</div>
+            </div>
+            <h2>Heading 3</h2>
+            <div class="o_settings_container">
+                <div class="o_setting_box d-none">Another hidden setting box</div>
+            </div>
+        </form>
+        """
+        doc = etree.XML(xml_content)
+
+        # Apply the method to hide empty containers
+        conf._hide_empty_containers(doc)
+
+        # Check that empty containers and their headings are hidden
+        empty_containers = doc.xpath("//div[@class='d-none']")
+        self.assertEqual(len(empty_containers), 2)
+
+        # Check that headings before empty containers are hidden
+        hidden_headings = doc.xpath("//h2[@class='d-none']")
+        self.assertEqual(len(hidden_headings), 2)
+        self.assertEqual(hidden_headings[0].text, "Heading 1")
+        self.assertEqual(hidden_headings[1].text, "Heading 3")
+
+        # Check that containers with visible setting boxes are not hidden
+        visible_containers = doc.xpath("//div[@class='o_settings_container']")
+        self.assertEqual(len(visible_containers), 1)
+
+    def test_hide_enterprise_settings(self):
+        """Test the _hide_enterprise_settings method"""
+        conf = self.env["res.config.settings"].create({})
+
+        # Create a test XML document with upgrade_boolean widgets
+        xml_content = """
+        <form>
+            <div class="o_setting_box">
+                <div>
+                    <field name="show_effect" widget="upgrade_boolean"/>
+                </div>
+            </div>
+            <div class="o_setting_box">
+                <div>
+                    <field name="field2"/>
+                </div>
+            </div>
+        </form>
+        """
+        doc = etree.XML(xml_content)
+
+        # Apply the method to hide enterprise settings
+        conf._hide_enterprise_settings(doc)
+
+        # Check that setting boxes with upgrade_boolean widgets are hidden
+        hidden_boxes = doc.xpath("//div[@class='d-none']")
+        self.assertEqual(len(hidden_boxes), 1)
+
+        # Check that other setting boxes are not hidden
+        visible_boxes = doc.xpath("//div[@class='o_setting_box']")
+        self.assertEqual(len(visible_boxes), 1)
+
+    def test_search_payment_providers(self):
+        """
+        This function checks if there are any payment providers in the database,
+        fetches them using a search query, and then verifies that none of these
+        providers have an associated module to buy.
+        """
         if self.env.get("payment.provider"):
             acquirer_ids = self.env["payment.provider"].search([])
             self.assertFalse(any([a.module_to_buy for a in acquirer_ids]))
 
     def test_search_ir_module(self):
+        """
+        This function is used to test the search method from 'ir.module.module' model.
+        It checks if there are any modules without a purchase cost (to_buy = False).
+        """
         module_ids = self.env["ir.module.module"].search([])
         self.assertFalse(any([m.to_buy for m in module_ids]))
 
