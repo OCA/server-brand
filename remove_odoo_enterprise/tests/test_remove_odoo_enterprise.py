@@ -21,10 +21,24 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         conf = self.env["res.config.settings"].create({})
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
-
-        query = "//div[div[field[@widget='upgrade_boolean']]]"
-        for item in doc.xpath(query):
-            self.assertIn("d-none", item.attrib["class"])
+        # Validate, there are no more visible setting boxes in the view,
+        # which include fields with upgrade_boolean widgets
+        query_settings_box = (
+            "//div[contains(@class, 'o_setting_box')]"
+            "[.//field[@widget='upgrade_boolean']]"
+        )
+        setting_boxes = doc.xpath(query_settings_box) or None
+        self.assertIsNone(setting_boxes)
+        # Validate, there are no more visible settings containers in the view,
+        # which only include hidden setting boxes, and therefore appear empty
+        # and check if they are hidden
+        query_settings_container = (
+            "//div[contains(@class, 'o_settings_container')]"
+            "[not(.//div[contains(@class, 'o_setting_box') "
+            "and not(contains(@class, 'd-none'))])]"
+        )
+        settings_container = doc.xpath(query_settings_container) or None
+        self.assertIsNone(settings_container)
 
     def test_hide_empty_containers(self):
         """Test the _hide_empty_containers method"""
