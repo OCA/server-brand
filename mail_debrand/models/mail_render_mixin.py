@@ -81,7 +81,7 @@ class MailRenderMixin(models.AbstractModel):
           ``_render_template_postprocess``)
 
         :return dict: {res_id: string of rendered template based on record}"""
-        orginal_rendered = super()._render_template(
+        original_rendered = super()._render_template(
             template_src,
             model,
             res_ids,
@@ -91,6 +91,5 @@ class MailRenderMixin(models.AbstractModel):
         )
 
         for key in res_ids:
-            orginal_rendered[key] = self.remove_href_odoo(orginal_rendered[key])
-
-        return orginal_rendered
+            original_rendered[key] = self.remove_href_odoo(original_rendered[key])
+        return original_rendered
