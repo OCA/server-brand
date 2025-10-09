@@ -27,5 +27,3 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
     def test_search_ir_module(self):
         module_ids = self.env["ir.module.module"].search([])
         self.assertFalse(any([m.to_buy for m in module_ids]))
-
-    
