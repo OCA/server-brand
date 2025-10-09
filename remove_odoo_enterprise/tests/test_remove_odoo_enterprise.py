@@ -28,10 +28,4 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         module_ids = self.env["ir.module.module"].search([])
         self.assertFalse(any([m.to_buy for m in module_ids]))
 
-    def test_appstore_invisible(self):
-        """Odoo 19 no longer includes the appstore widget; nothing to assert."""
-        self.skipTest("mobile_apps_funnel widget removed in Odoo 19")
-
-    def test_appstore_visible(self):
-        """Odoo 19 no longer includes the appstore widget; nothing to assert."""
-        self.skipTest("mobile_apps_funnel widget removed in Odoo 19")
+    
