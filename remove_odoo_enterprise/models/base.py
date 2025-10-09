@@ -10,7 +10,6 @@ class Base(models.AbstractModel):
 
     @api.model
     def search_fetch(self, domain, field_names=None, offset=0, limit=None, order=None):
-        # Accept optional field_names to match Odoo 19 signature
         res = super().search_fetch(domain, field_names, offset, limit, order)
         if self._name == "ir.module.module":
             res = res.filtered(lambda a: not a.to_buy)
