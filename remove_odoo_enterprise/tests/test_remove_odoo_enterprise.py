@@ -29,25 +29,9 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         self.assertFalse(any([m.to_buy for m in module_ids]))
 
     def test_appstore_invisible(self):
-        """The appstore widget is invisible"""
-        conf = self.env["res.config.settings"].create({})
-        view = conf.get_views([[False, "form"]])["views"]["form"]
-        doc = etree.XML(view["arch"])
-
-        query = "//widget[@name='mobile_apps_funnel']"
-        for item in doc.xpath(query):
-            self.assertTrue(item.attrib["invisible"])
+        """Odoo 19 no longer includes the appstore widget; nothing to assert."""
+        self.skipTest("mobile_apps_funnel widget removed in Odoo 19")
 
     def test_appstore_visible(self):
-        """Disabling the view makes the appstore widget visible again"""
-        conf_form_view = self.env.ref(
-            "remove_odoo_enterprise.res_config_settings_view_form"
-        )
-        conf_form_view.active = False
-        conf = self.env["res.config.settings"].create({})
-        view = conf.get_views([[False, "form"]])["views"]["form"]
-        doc = etree.XML(view["arch"])
-
-        query = "//widget[@name='mobile_apps_funnel']"
-        for item in doc.xpath(query):
-            self.assertNotIn("invisible", item.attrib)
+        """Odoo 19 no longer includes the appstore widget; nothing to assert."""
+        self.skipTest("mobile_apps_funnel widget removed in Odoo 19")
