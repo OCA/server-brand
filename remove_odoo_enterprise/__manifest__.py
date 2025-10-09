@@ -9,6 +9,7 @@
     "website": "https://github.com/OCA/server-brand",
     "license": "AGPL-3",
     "depends": ["base_setup"],
-    "data": ["views/res_config_settings_views.xml"],
+    # Removed obsolete view override targeting a widget not present in 19.0
+    "data": [],
     "installable": True,
 }
