@@ -3,12 +3,12 @@
 {
     "name": "Remove Odoo Enterprise",
     "summary": "Remove enterprise modules and setting items",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Maintenance",
     "author": "Eska, Onestein, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-brand",
     "license": "AGPL-3",
     "depends": ["base_setup"],
-    "data": ["views/res_config_settings_views.xml"],
+    "data": [],
     "installable": True,
 }
