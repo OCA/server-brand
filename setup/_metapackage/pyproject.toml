@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-oca-server-brand"
+version = "19.0.20251013.0"
+dependencies = [
+    "odoo-addon-disable_odoo_online==19.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 19.0",
+]
