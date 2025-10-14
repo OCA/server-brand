@@ -16,5 +16,6 @@
     ],
     "data": [
         "views/portal_templates.xml",
+        "views/web_login_debrand.xml",
     ],
 }
