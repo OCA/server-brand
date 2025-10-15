@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
 # Copyright 2025 Milan Topuzov (https://milantopuzov.dev)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 from lxml import html
 
-from odoo.tests import common
 from odoo import http
+from odoo.tests import common
 
 
 class _DummyRequest:

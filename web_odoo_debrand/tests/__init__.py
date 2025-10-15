@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Tests package for web_odoo_debrand.
 
 This package follows the same pattern as other modules in this repo,
