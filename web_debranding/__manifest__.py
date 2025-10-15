@@ -1,7 +1,7 @@
 # Copyright 2025 Milan Topuzov (https://milantopuzov.dev)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 {
-    "name": "Web Debrand (Odoo)",
+    "name": "Web Debranding",
     "summary": "Hide Odoo branding elements in web backend",
     "version": "19.0.1.0.0",
     "category": "Hidden",

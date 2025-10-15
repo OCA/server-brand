@@ -1,6 +1,6 @@
-=====================
-Web Debrand (Odoo)
-=====================
+================
+Web Debranding
+================
 
 This addon removes selected Odoo branding elements in the web backend.
 
@@ -30,4 +30,3 @@ Maintainers
 ~~~~~~~~~~~
 
 This module is part of the OCA/server-brand project.
-

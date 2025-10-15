@@ -21,7 +21,7 @@ class _DummyRequest:
         return ""
 
 
-class TestWebOdooDebrandTitle(common.TransactionCase):
+class TestWebDebrandingTitle(common.TransactionCase):
     def setUp(self):
         super().setUp()
         # Bind a dummy request into the http local stack so that the

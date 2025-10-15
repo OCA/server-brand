@@ -6,7 +6,7 @@ from lxml import etree
 from odoo.tests import common
 
 
-class TestWebOdooDebrand(common.TransactionCase):
+class TestWebDebranding(common.TransactionCase):
     def test_settings_about_section_removed(self):
         """The About block in Settings form should be removed."""
         conf = self.env["res.config.settings"].create({})
