@@ -8,4 +8,4 @@ importing local test modules so Odoo test discovery can load them.
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 from . import test_web_debranding
-from . import test_title_debrand
+from . import test_title_debranding
