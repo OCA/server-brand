@@ -13,4 +13,4 @@ def post_init_hook(env):
     # For CI/CD avoids problems testing modules that removes/positioning elements
     # that other modules uses in their tests.
     if config["test_enable"] or config["test_file"]:
-        env.ref("website_odoo_debranding.layout_footer_copyright").active = False
+        env.ref("website_debranding.layout_footer_copyright").active = False
