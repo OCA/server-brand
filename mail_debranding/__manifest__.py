@@ -14,7 +14,7 @@
     """,
     "version": "18.0.1.0.1",
     "category": "Social Network",
-    "website": "https://github.com/OCA/mail",
+    "website": "https://github.com/OCA/server-brand",
     "author": """Tecnativa, ForgeFlow, Onestein, Sodexis, Nexterp Romania,
              Odoo Community Association (OCA)""",
     "license": "AGPL-3",
