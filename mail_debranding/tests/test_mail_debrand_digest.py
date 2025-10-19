@@ -5,10 +5,8 @@
 
 from datetime import datetime
 
-from werkzeug.urls import url_join
-
-from odoo import _
 from odoo.tests import common, tagged
+from odoo.tools.urls import urljoin
 
 
 @tagged("-at_install", "post_install")
@@ -41,8 +39,8 @@ class TestMailDebrandDigest(common.TransactionCase):
             engine="qweb_view",
             add_context={
                 "title": self.mail_digest_id.name,
-                "top_button_label": _("Connect"),
-                "top_button_url": url_join(web_base_url, "/web/login"),
+                "top_button_label": self.env._("Connect"),
+                "top_button_url": urljoin(web_base_url, "/web/login"),
                 "company": self.env.user.company_id,
                 "user": self.env.user,
                 "tips_count": 1,
