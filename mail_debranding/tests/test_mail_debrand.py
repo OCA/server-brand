@@ -21,7 +21,7 @@ class TestMailDebrand(common.TransactionCase):
         )
         lang_nl = cls.env.ref("base.lang_nl")
         if not lang_nl.active:
-            lang_nl.toggle_active()
+            lang_nl.action_unarchive()
 
     def test_debrand_binary_value(self):
         """
