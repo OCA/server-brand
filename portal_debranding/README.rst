@@ -66,6 +66,7 @@ Contributors
 
 - Iván Todorovich <ivan.todorovich@gmail.com>
 - Nils Coenen <nils.coenen@nico-solutions.de>
+- Milan Topuzov `milantopuzov.dev <https://milantopuzov.dev>`__
 
 Maintainers
 -----------
