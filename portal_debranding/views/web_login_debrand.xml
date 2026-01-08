@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Hide the "Powered by Odoo" link in the login footer -->
+    <template id="login_debranding_hide_powered_by" inherit_id="web.login_layout">
+        <xpath
+            expr="//a[contains(@href, 'odoo.com') and contains(@href, 'utm_medium=auth')]"
+            position="attributes"
+        >
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+</odoo>
