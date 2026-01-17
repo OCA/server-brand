@@ -1,0 +1,2 @@
+- [HAV Media](https://hav.media):
+  - [Jan-Phillip Oesterling](<https://github.com/jappi00>) \<<jpo@hav.media>\>

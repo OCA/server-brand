@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="sale_brand_promotion_debrand"
+        inherit_id="sale.sale_order_portal_template"
+        priority="99"
+    >
+        <xpath
+            expr="//div[@id='sale_portal_connect_software_modal']//div[hasclass('modal-body')]/div[1]"
+            position="replace"
+        />
+        <xpath
+            expr="//div[@id='sale_portal_connect_software_modal']//div[hasclass('modal-body')]/div[1]/h5"
+            position="replace"
+        >
+            <h5>Want to import this document?</h5>
+        </xpath>
+        <xpath
+            expr="//div[@id='sale_portal_connect_software_modal']//div[hasclass('modal-body')]/div[last()-1]/p"
+            position="replace"
+        >
+            <p
+            >Use the above REST URL to get structured data of the purchase order in UBL format.</p>
+        </xpath>
+        <xpath
+            expr="//div[@id='sale_portal_connect_software_modal']//div[hasclass('modal-body')]/div[last()]"
+            position="replace"
+        />
+    </template>
+</odoo>
