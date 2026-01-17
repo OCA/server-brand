@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [mail_debranding](mail_debranding/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [portal_debranding](portal_debranding/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Remove Odoo Branding from Portal
 [remove_odoo_enterprise](remove_odoo_enterprise/) | 19.0.1.0.0 |  | Remove enterprise modules and setting items
+[sale_portal_debranding](sale_portal_debranding/) | 19.0.1.0.0 |  | Sale Portal Debranding
 [website_debranding](website_debranding/) | 19.0.1.0.0 |  | Remove Odoo Branding from Website
 
 [//]: # (end addons)

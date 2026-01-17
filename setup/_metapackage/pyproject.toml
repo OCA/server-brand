@@ -1,11 +1,12 @@
 [project]
 name = "odoo-addons-oca-server-brand"
-version = "19.0.20260109.0"
+version = "19.0.20260117.0"
 dependencies = [
     "odoo-addon-disable_odoo_online==19.0.*",
     "odoo-addon-mail_debranding==19.0.*",
     "odoo-addon-portal_debranding==19.0.*",
     "odoo-addon-remove_odoo_enterprise==19.0.*",
+    "odoo-addon-sale_portal_debranding==19.0.*",
     "odoo-addon-website_debranding==19.0.*",
 ]
 classifiers=[
