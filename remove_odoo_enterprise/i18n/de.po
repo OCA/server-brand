@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-01-19 00:45+0000\n"
+"Last-Translator: jappi00 <jappi2000@ewetel.net>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_base
@@ -22,7 +24,7 @@ msgstr ""
 #. module: remove_odoo_enterprise
 #: model:ir.model,name:remove_odoo_enterprise.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #. module: remove_odoo_enterprise
 #: model:ir.model.fields,field_description:remove_odoo_enterprise.field_res_config_settings__display_name
