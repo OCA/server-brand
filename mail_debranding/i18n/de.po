@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-19 00:45+0000\n"
+"PO-Revision-Date: 2026-01-20 00:36+0000\n"
 "Last-Translator: jappi00 <jappi2000@ewetel.net>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -20,29 +20,29 @@ msgstr ""
 #. odoo-python
 #: code:addons/mail_debranding/tests/test_mail_debrand_digest.py:0
 msgid "Connect"
-msgstr ""
+msgstr "Verbinden"
 
 #. module: mail_debranding
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_mail__display_name
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_render_mixin__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigename"
 
 #. module: mail_debranding
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_mail__id
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_render_mixin__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_debranding
 #: model:ir.model,name:mail_debranding.model_mail_render_mixin
 msgid "Mail Render Mixin"
-msgstr ""
+msgstr "Mail Render Mixin"
 
 #. module: mail_debranding
 #: model:ir.model,name:mail_debranding.model_mail_mail
 msgid "Outgoing Mails"
-msgstr ""
+msgstr "Ausgehende Mails"
 
 #. module: mail_debranding
 #: model:ir.model,website_form_label:mail_debranding.model_mail_mail
