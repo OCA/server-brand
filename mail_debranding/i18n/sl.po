@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-03-19 10:13+0000\n"
-"Last-Translator: Matjaz Mozetic <matjaz@matmoz.si>\n"
+"PO-Revision-Date: 2026-07-25 07:17+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -15,40 +15,40 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mail_debranding
 #. odoo-python
 #: code:addons/mail_debranding/tests/test_mail_debrand_digest.py:0
 msgid "Connect"
-msgstr ""
+msgstr "Poveži"
 
 #. module: mail_debranding
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_mail__display_name
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_render_mixin__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Prikazani naziv"
 
 #. module: mail_debranding
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_mail__id
 #: model:ir.model.fields,field_description:mail_debranding.field_mail_render_mixin__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_debranding
 #: model:ir.model,name:mail_debranding.model_mail_render_mixin
 msgid "Mail Render Mixin"
-msgstr ""
+msgstr "Mixin za prikazovanje e-pošte"
 
 #. module: mail_debranding
 #: model:ir.model,name:mail_debranding.model_mail_mail
 msgid "Outgoing Mails"
-msgstr ""
+msgstr "Izhodna pošta"
 
 #. module: mail_debranding
 #: model:ir.model,website_form_label:mail_debranding.model_mail_mail
 msgid "Send an E-mail"
-msgstr ""
+msgstr "Pošlji e-pošto"
 
 #~ msgid "Email Templates"
 #~ msgstr "Predloge e-pošte"
