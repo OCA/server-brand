@@ -6,3 +6,5 @@
 - Dennis Sluijk \<<d.sluijk@onestein.nl>\>
 - Dhara Solanki \<<dhara.solanki@initos.com>\> (<http://www.initos.com>)
 - Vincent Hatakeyama \<<vincent.hatakeyama@xcg-consulting.fr>\>
+- [Heliconia Solutions Pvt. Ltd.](https://www.heliconia.io)
+  - Bhavesh Heliconia

@@ -7,4 +7,4 @@ standard code:
   to deactivate notifier code in odoo enterprise
 - apps and updates menu items in settings are hidden inside Technical
   Parameters
-- documentation, support and odoo.com account are removed from user menu
+- support is removed from user menu
