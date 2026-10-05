@@ -14,8 +14,9 @@ class Base(models.AbstractModel):
     def _search(self, domain, *args, **kwargs):
         # Don't search modules to buy in modules and payment providers
         if kwargs.get("active_test", True):
-            # the context key is used for seeing when the call to this method is done
-            # from `models.py > fetch` method, bypassing this extra domain in such case
+            # `fetch()` checks access with `_search([("id", "in", ids)],
+            # active_test=False)`: don't hide those records there, or reading a
+            # known enterprise module (e.g. res.config.settings) fails
             if self._name == "ir.module.module":
                 domain = Domain(domain or []) & Domain([("to_buy", "=", False)])
             elif self._name == "payment.provider":

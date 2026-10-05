@@ -6,7 +6,7 @@
 {
     "name": "Remove Odoo Enterprise",
     "summary": "Remove enterprise modules and setting items",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Maintenance",
     "author": "Eska, Onestein, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-brand",
