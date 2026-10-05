@@ -16,7 +16,7 @@ class ResConfigSettings(models.TransientModel):
         ret_val = super().get_views(views, options)
 
         form_view = self.env["ir.ui.view"].browse(ret_val["views"]["form"]["id"])
-        if not form_view.xml_id == "base.res_config_settings_view_form":
+        if form_view.xml_id != "base.res_config_settings_view_form":
             return ret_val
 
         doc = etree.XML(ret_val["views"]["form"]["arch"])

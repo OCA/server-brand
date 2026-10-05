@@ -22,8 +22,8 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
     def test_search_base(self):
         if self.env.get("payment.provider"):
             acquirer_ids = self.env["payment.provider"].search([])
-            self.assertFalse(any([a.module_to_buy for a in acquirer_ids]))
+            self.assertFalse(any(a.module_to_buy for a in acquirer_ids))
 
     def test_search_ir_module(self):
         module_ids = self.env["ir.module.module"].search([])
-        self.assertFalse(any([m.to_buy for m in module_ids]))
+        self.assertFalse(any(m.to_buy for m in module_ids))
