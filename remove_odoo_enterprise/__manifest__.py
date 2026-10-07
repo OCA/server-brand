@@ -1,4 +1,7 @@
 # Copyright 2018 Eska Yazılım ve Danışmanlık A.Ş (www.eskayazilim.com.tr)
+# Copyright 2018-2020 Onestein (<http://www.onestein.eu>)
+# Copyright 2023 Le Filament (https://le-filament.com)
+# Copyright 2026 Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Remove Odoo Enterprise",
