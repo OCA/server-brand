@@ -7,12 +7,8 @@
 
 {
     "name": "Mail Debrand",
-    "summary": """Remove Odoo branding in sent emails
-    Removes anchor <a href odoo.com togheder with it's parent
-    ( for powerd by) form all the templates
-    removes any 'odoo' that are in tempalte texts > 20characters
-    """,
-    "version": "19.0.1.0.0",
+    "summary": "Remove Odoo branding in sent emails",
+    "version": "20.0.1.0.0",
     "category": "Social Network",
     "website": "https://github.com/OCA/server-brand",
     "author": """Tecnativa, ForgeFlow, Onestein, Sodexis, Nexterp Romania,
