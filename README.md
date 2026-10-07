@@ -18,7 +18,11 @@ server-brand
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 20.0.1.0.0 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 
